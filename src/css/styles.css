@@ -23,3 +23,80 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1128px;
+  padding-left: 0;
+
+}
+
+.gallery img {
+  width: 300px;
+}
+
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  width: 408px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-form input {
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.feedback-form textarea {
+  width: 360px;
+  height: 80px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.feedback-form button[type="submit"] {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.feedback-form button[type="submit"]:hover {
+  background-color: #6c8cff;
+  transition: background-color 250ms linear;
+}
