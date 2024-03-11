@@ -28,8 +28,12 @@ function handleSubmite(event) {
   //   console.log(event.currentTarget.elements.email.value);
   //   console.log(event.currentTarget.elements.message.value);
 
-  console.log(locStorValue);
-
-  localStorage.removeItem(feedback);
-  event.currentTarget.reset();
+  if (locStorValue.email === '' || locStorValue.message === '') {
+    alert('Заповніть всі поля!');
+    return;
+  } else {
+    console.log(locStorValue);
+    localStorage.removeItem(feedback);
+    event.currentTarget.reset();
+  }
 }
